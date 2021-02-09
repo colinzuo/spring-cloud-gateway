@@ -51,6 +51,8 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<spring-javaformat.version>0.0.26</spring-javaformat.version>
+		<spring-javaformat.lineSeparator>lf</spring-javaformat.lineSeparator>
 		<blockhound.version>1.0.4.RELEASE</blockhound.version>
 		<java.version>1.8</java.version>
 		<junit-pioneer.version>1.0.0</junit-pioneer.version>

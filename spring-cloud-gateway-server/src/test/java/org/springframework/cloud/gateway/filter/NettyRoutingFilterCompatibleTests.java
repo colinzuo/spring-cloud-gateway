@@ -19,9 +19,9 @@ package org.springframework.cloud.gateway.filter;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.springframework.boot.SpringBootConfiguration;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.context.TestConfiguration;
 import org.springframework.cloud.gateway.route.Route;
 import org.springframework.cloud.gateway.test.BaseWebClientTests;
 import org.springframework.context.annotation.Import;
@@ -69,7 +69,7 @@ public class NettyRoutingFilterCompatibleTests extends BaseWebClientTests {
 	}
 
 	@EnableAutoConfiguration
-	@SpringBootConfiguration
+	@TestConfiguration
 	@Import(DefaultTestConfig.class)
 	public static class TestConfig {
 

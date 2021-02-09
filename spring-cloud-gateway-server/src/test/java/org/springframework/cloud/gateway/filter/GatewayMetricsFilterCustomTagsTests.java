@@ -23,9 +23,9 @@ import org.junit.runner.RunWith;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.SpringBootConfiguration;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.context.TestConfiguration;
 import org.springframework.cloud.gateway.support.tagsprovider.GatewayTagsProvider;
 import org.springframework.cloud.gateway.test.BaseWebClientTests;
 import org.springframework.context.annotation.Bean;
@@ -77,7 +77,7 @@ public class GatewayMetricsFilterCustomTagsTests extends BaseWebClientTests {
 	}
 
 	@EnableAutoConfiguration
-	@SpringBootConfiguration
+	@TestConfiguration
 	@Import(DefaultTestConfig.class)
 	public static class CustomConfig {
 

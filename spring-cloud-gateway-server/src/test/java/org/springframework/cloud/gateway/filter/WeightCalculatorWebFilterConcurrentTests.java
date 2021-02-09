@@ -32,9 +32,9 @@ import reactor.core.publisher.Mono;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.SpringBootConfiguration;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.context.TestConfiguration;
 import org.springframework.cloud.gateway.event.WeightDefinedEvent;
 import org.springframework.cloud.gateway.support.WeightConfig;
 import org.springframework.cloud.gateway.test.BaseWebClientTests;
@@ -115,7 +115,7 @@ public class WeightCalculatorWebFilterConcurrentTests {
 	}
 
 	@EnableAutoConfiguration
-	@SpringBootConfiguration
+	@TestConfiguration
 	@Import(BaseWebClientTests.DefaultTestConfig.class)
 	public static class CustomConfig {
 
